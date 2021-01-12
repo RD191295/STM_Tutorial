@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"led_testing\startup_stm32f429xx.o"
+"led_testing\main.o"
+"led_testing\stm32f4xx_it.o"
+"led_testing\stm32f4xx_hal_msp.o"
+"led_testing\stm32f4xx_hal_tim.o"
+"led_testing\stm32f4xx_hal_tim_ex.o"
+"led_testing\stm32f4xx_hal_rcc.o"
+"led_testing\stm32f4xx_hal_rcc_ex.o"
+"led_testing\stm32f4xx_hal_flash.o"
+"led_testing\stm32f4xx_hal_flash_ex.o"
+"led_testing\stm32f4xx_hal_flash_ramfunc.o"
+"led_testing\stm32f4xx_hal_gpio.o"
+"led_testing\stm32f4xx_hal_dma_ex.o"
+"led_testing\stm32f4xx_hal_dma.o"
+"led_testing\stm32f4xx_hal_pwr.o"
+"led_testing\stm32f4xx_hal_pwr_ex.o"
+"led_testing\stm32f4xx_hal_cortex.o"
+"led_testing\stm32f4xx_hal.o"
+"led_testing\stm32f4xx_hal_exti.o"
+"led_testing\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "LED_TESTING\LED_TESTING.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_TESTING.map" -o LED_TESTING\LED_TESTING.axf
